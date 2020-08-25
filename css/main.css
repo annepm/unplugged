@@ -94,54 +94,83 @@ footer {
         justify-content: center;
         align-items: center;
 }
+/*Header Styles*/
+header {
+  padding: 15px 0;
+}
 
 header .content-wrapper {
+  align-items: center;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-  align-items: center;
+  margin: 0;
 }
 
-header .header-divider {
+.header-divider {
   background-color: red;
+  height: 1px;
+  margin: 10px 0 20px 0;
+  width: 100%;
 }
 
 header nav {
+  align-items: center;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
-  align-items: center;
+  width: 60%;
 }
 
 header nav ul {
   display: flex;
   justify-content: space-around;
+  width: 100%;
 }
 
-footer .social-icons {
+/*Footer stlyes*/
+
+footer {
+  flex-direction: column;
+}
+
+footer p {
+  margin: 0;
+}
+
+footer .content-wrapper {
+  margin: 50px 0;
+  width: 55%;
+}
+
+footer .contact {
+  margin bottom: 50px;
+}
+
+footer .social-icons{
+  align-items: center;
   display: flex;
   justify-content: space-around;
-  align-items: center;
 }
 
 footer .social-icons p {
+  align-items: center;
   display: flex;
   justify-content: center;
-  align-items: center;
+}
+
+footer .copyright {
+ margin: 20px 0;
 }
 
 /*-------------Mobile Styles - Homepage -------------*/
 
 /*Main section stlyes*/
 
-main .hero-area {
+.hero-area {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-}
-
-main .content-wrapper {
-
 }
 
 /*Aside section stlyes*/
@@ -153,18 +182,6 @@ aside {
   justify-content: center;
 }
 
-aside .content-wrapper {
-
-}
-
-aside .form-description {
-
-}
-
-aside .form {
-
-}
-
 /*Section "features" stlyes*/
 
 .features {
@@ -173,8 +190,13 @@ aside .form {
   justify-content: center;
 }
 
-section .content-wrapper {
+.features h2 {
+  margin-bottom: 60px;
+}
 
+.features article {
+  margin: 30px 0;
+  width: 63%;
 }
 
 .features .features-items {
@@ -184,6 +206,9 @@ section .content-wrapper {
   justify-content: center;
 }
 
+.features p {
+  margin: 0;
+}
 /*Reviews section stlyes*/
 
 .reviews {
@@ -192,45 +217,13 @@ section .content-wrapper {
   justify-content: center;
 }
 
-section .content-wrapper {
-
+.reviews h2 {
+  margin-bottom: 40px;
 }
 
-section .testimony {
-
-}
-
-/*Footer stlyes*/
-
-footer{
-
-}
-footer .content-wrapper {
-
-  }
-
-footer .footer-content{
-
-  }
-
-footer .contact {
-
-  }
-
-footer .social {
-  align-items: center;
-  display: flex;
-  justify-content: center;
-}
-
-footer .social-icons{
-  align-items: center;
-  display: flex;
-  justify-content: center;
-}
-
-footer .copyright {
-
+.reviews h3 {
+  margin: 20px 0;
+  width: 55%;
 }
 
 /* ==========================================================================
@@ -238,37 +231,48 @@ footer .copyright {
    ========================================================================== */
 
 .mission {
-  display: flex;
-  justify-content: center;
   align-items: center;
+  display: flex;
   flex-flow: row wrap;
+  justify-content: center;
 }
 
 .contact-section {
-  display: flex;
-  justify-content: center;
   align-items: center;
+  display: flex;
   flex-flow: row wrap;
+  justify-content: center;
 }
 
+.contact-content {
+  margin: 0;
+}
 /* ==========================================================================
    FAQ Page
    ========================================================================== */
 
 .faq {
-  display: flex;
-  justify-content: center;
   align-items: center;
+  display: flex;
   flex-flow: row wrap;
+  justify-content: center;
 }
 
 .faq .content-wrapper {
-  display: flex;
-  justify-content: center;
   align-items: center;
+  display: flex;
   flex-flow: row wrap;
+  justify-content: center;
+  margin: 50px 0 0 0;
 }
 
+.faq h2 {
+  margin-bottom: 40px;
+}
+
+.faq-content {
+  margin-bottom: 50px;
+}
 /* ==========================================================================
    Helper classes
    ========================================================================== */
