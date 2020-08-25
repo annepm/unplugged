@@ -504,11 +504,61 @@ aside .content-wrapper .form {
 
 }
 
-
-
 @media only screen and (min-width: 1200px) {
   /*Desktop styles here*/
-}
+
+  /*General stlyes*/
+  .content-wrapper {
+    max-width: 960px;
+  }
+
+  /*-------------------------HOME PAGE------------------------*/
+
+  /*Hero styles*/
+  .hero-area h1 {
+    width: 60%;
+  }
+
+  /*Aside styles*/
+
+  aside .content-wrapper {
+      justify-content: space-around;
+  }
+
+  aside .content-wrapper .form-description,
+  aside .content-wrapper .form {
+      width: 30%;
+    }
+
+  /*Features styles*/
+
+  .features h2 {
+    width: 90%;
+  }
+
+  .features article {
+    flex-basis: 33%;
+  }
+
+  /*Reviews styles*/
+
+  .reviews article div {
+    width: 42%;
+  }
+
+  /*-------------------------ABOUT PAGE------------------------*/
+
+  .mission h2, .contact-section .content-wrapper h2 {
+    width: 95%;
+  }
+
+  /*-------------------------FAQ PAGE------------------------*/
+
+  .faq h2 {
+    width: 100%;
+   }
+
+  }
 
 @media print,
   (-webkit-min-device-pixel-ratio: 1.25),
