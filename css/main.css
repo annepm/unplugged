@@ -93,8 +93,10 @@ html {
 }
 
 body {
+  color: #e2e3ed;
   font-family: 'Open Sans', sans-serif;
   font-size: 1em;
+  text-align: left;
 }
 
 ul,
@@ -109,26 +111,26 @@ a {
 
 h1 {
   font-family: 'Poppins', sans-serif;
-  font-size: 3.75em;
+  font-size: 2.25em;
+  font-weight: 400;
 }
 
 h2 {
   font-family: 'Poppins', sans-serif;
-  font-size: 2.25em;
+  font-size: 1.875em;
+  font-weight: 400;
 }
 
 h3 {
   font-family: 'Poppins', sans-serif;
-  font-size: 1.875em;
-}
-
-h4 {
-  font-family: 'Poppins', sans-serif;
+  font-size: 1.125em;
+  font-weight: 400;
+  margin: 10px auto;
 }
 
 p {
-  font-size: 1.125em;
-  line-height: 1.5em;
+  font-size: .875em;
+  line-height: 1.125em;
 }
 
 img {
@@ -140,8 +142,6 @@ figure {
 }
 
 address {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 1.125em;
   font-style: normal;
 }
 
@@ -158,8 +158,10 @@ footer {
         justify-content: center;
         align-items: center;
 }
+
 /*Header Styles*/
 header {
+  background-color: rgb(32, 35, 34);
   padding: 15px 0;
 }
 
@@ -172,7 +174,7 @@ header .content-wrapper {
 }
 
 .header-divider {
-  background-color: red;
+  background-color: rgb(58, 58, 58);
   height: 1px;
   margin: 10px 0 20px 0;
   width: 100%;
@@ -189,12 +191,20 @@ header nav {
 header nav ul {
   display: flex;
   justify-content: space-around;
+  padding: 0;
   width: 100%;
+}
+
+header nav ul li {
+  font-size: 1.125em;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
 /*Footer stlyes*/
 
 footer {
+  background-color: rgb(32, 35, 34);
   flex-direction: column;
 }
 
@@ -203,12 +213,17 @@ footer p {
 }
 
 footer .content-wrapper {
-  margin: 50px 0;
+  margin: 50px 0 25px 0;
+  text-align: center;
   width: 55%;
 }
 
 footer .contact {
   margin bottom: 50px;
+}
+
+footer .social {
+  margin: 40px 0 0 0;
 }
 
 footer .social-icons{
@@ -232,6 +247,7 @@ footer .copyright {
 /*Main section stlyes*/
 
 .hero-area {
+  background-color: black;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
@@ -241,26 +257,61 @@ footer .copyright {
 
 aside {
   align-items: center;
+  background-color: rgb(82, 113, 88);
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
 }
 
+aside .content-wrapper {
+  margin-top: 15px;
+}
+
+aside p {
+  margin: 0;
+}
+
+aside .form {
+  margin-top: 30px;
+}
+
+input[type=text] {
+  box-sizing: border-box;
+  color: #2a423a;
+  font-style: italic;
+  padding: 1em;
+  width: 100%;
+}
+
+input[type=submit] {
+  color: #e2e3ed;
+  background-color: #2a423a;
+  border: none;
+  font-family: 'Poppins', Helvetica, Arial, sans-serif;
+  font-size: 1.125em;
+  font-weight: 500;
+  padding: 20px 0;
+  text-align: center;
+  text-transform: uppercase;
+  width: 100%;
+}
+
 /*Section "features" stlyes*/
 
 .features {
+  background-color: black;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
 }
 
 .features h2 {
-  margin-bottom: 60px;
+  margin: 0 0 60px 0;
 }
 
 .features article {
   margin: 30px 0;
-  width: 63%;
+  width: 60%;
 }
 
 .features .features-items {
@@ -273,12 +324,22 @@ aside {
 .features p {
   margin: 0;
 }
+
+.features-item-description {
+  text-align: center;
+}
+
 /*Reviews section stlyes*/
 
 .reviews {
+  background-color: rgb(42, 66, 58);
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
+}
+
+.reviews .content-wrapper {
+  margin: 25px;
 }
 
 .reviews h2 {
@@ -296,20 +357,38 @@ aside {
 
 .mission {
   align-items: center;
+  background-color: rgb(82, 113, 88);
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
+}
+
+.mission h2 {
+  margin: 0;
+}
+
+.mission-content p {
+  margin: 10px 0;
 }
 
 .contact-section {
   align-items: center;
+  background-color: rgb(42, 66, 58);
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
 }
 
+.contact-section h2 {
+  margin: 0;
+}
+
 .contact-content p {
   margin: 0;
+}
+
+.map {
+  color: black;
 }
 
 /* ==========================================================================
@@ -318,6 +397,7 @@ aside {
 
 .faq {
   align-items: center;
+  background-color: rgb(82, 113, 88);
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
@@ -331,8 +411,18 @@ aside {
   margin: 50px 0 0 0;
 }
 
+.faq p {
+  line-height: 1.125em;
+  margin: 0 auto;
+}
+
 .faq h2 {
-  margin-bottom: 40px;
+  margin: 0 0 25px 0;
+}
+
+.faq h3 {
+  line-height: 1.5em;
+  margin: 0 0 10px 0;
 }
 
 .faq-content {
