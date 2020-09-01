@@ -323,6 +323,12 @@ input[type=submit] {
   justify-content: center;
 }
 
+.features i {
+  color: #00b300;
+  font-size: 3.75em;
+  margin-bottom: 40px;
+}
+
 .features p {
   margin: 0;
   text-align: center;
