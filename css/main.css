@@ -666,6 +666,14 @@ aside .content-wrapper .form {
   width: 45%;
 }
 
+.map figure {
+  height: 0;
+  overflow: hidden;
+  padding-bottom: 45%;
+  position: relative;
+  width: 100%;
+}
+
 .contact-section .content-wrapper h2 {
   width: 80%;
 }
@@ -778,6 +786,14 @@ aside .content-wrapper .form {
   .contact-section .content-wrapper h2 {
     font-size: 3em;
     width: 95%;
+  }
+
+  .map figure {
+    height: 0;
+    overflow: hidden;
+    padding-bottom: 38%;
+    position: relative;
+    width: 100%;
   }
 
   .contact-content h3 {
