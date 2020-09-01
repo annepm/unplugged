@@ -109,12 +109,6 @@ a {
   text-decoration: none;
 }
 
-h1 {
-  font-family: 'Poppins', sans-serif;
-  font-size: 2.25em;
-  font-weight: 400;
-}
-
 h2 {
   font-family: 'Poppins', sans-serif;
   font-size: 1.875em;
@@ -138,7 +132,7 @@ img {
 }
 
 figure {
-
+  margin: 0;
 }
 
 address {
@@ -153,15 +147,16 @@ address {
 /*----Base Header - Footer Styles-----*/
 header,
 footer {
+        align-items: center;
+        background-color: #202322;
         display: flex;
         flex-flow: row wrap;
         justify-content: center;
-        align-items: center;
+
 }
 
 /*Header Styles*/
 header {
-  background-color: rgb(32, 35, 34);
   padding: 15px 0;
 }
 
@@ -171,6 +166,14 @@ header .content-wrapper {
   flex-flow: row wrap;
   justify-content: center;
   margin: 0;
+}
+
+header figure {
+  align-items: center;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  width: 60%;
 }
 
 .header-divider {
@@ -184,28 +187,30 @@ header nav {
   align-items: center;
   display: flex;
   flex-flow: row wrap;
+  font-size: 1.125em;
+  font-weight: 700;
   justify-content: space-around;
+  text-transform: uppercase;
   width: 60%;
 }
 
 header nav ul {
   display: flex;
   justify-content: space-around;
+  margin: 0;
   padding: 0;
   width: 100%;
 }
 
 header nav ul li {
   font-size: 1.125em;
-  font-weight: bold;
-  text-transform: uppercase;
 }
 
 /*Footer stlyes*/
 
 footer {
-  background-color: rgb(32, 35, 34);
   flex-direction: column;
+  text-align: center;
 }
 
 footer p {
@@ -213,17 +218,12 @@ footer p {
 }
 
 footer .content-wrapper {
-  margin: 50px 0 25px 0;
-  text-align: center;
+  margin: 50px 0;
   width: 55%;
 }
 
 footer .contact {
   margin bottom: 50px;
-}
-
-footer .social {
-  margin: 40px 0 0 0;
 }
 
 footer .social-icons{
@@ -247,10 +247,19 @@ footer .copyright {
 /*Main section stlyes*/
 
 .hero-area {
-  background-color: black;
+  background: url("../img/unplugged-retreat.jpg") center no-repeat #333;
+  background-size: cover;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
+  min-height: 500px;
+}
+
+.hero-area h1 {
+  font-family: 'Poppins', Helvetica, Arial, sans-serif;
+  font-size: 2.25em;
+  font-weight: 500;
+  line-height: 1.2;
 }
 
 /*Aside section stlyes*/
@@ -261,14 +270,6 @@ aside {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-}
-
-aside .content-wrapper {
-  margin-top: 15px;
-}
-
-aside p {
-  margin: 0;
 }
 
 aside .form {
@@ -299,7 +300,8 @@ input[type=submit] {
 /*Section "features" stlyes*/
 
 .features {
-  background-color: black;
+  background: url("../img/unplugged-retreat-features.jpg") center no-repeat;
+  background-size: cover;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
@@ -323,9 +325,6 @@ input[type=submit] {
 
 .features p {
   margin: 0;
-}
-
-.features-item-description {
   text-align: center;
 }
 
@@ -338,12 +337,9 @@ input[type=submit] {
   justify-content: center;
 }
 
-.reviews .content-wrapper {
-  margin: 25px;
-}
-
 .reviews h2 {
-  margin-bottom: 40px;
+  line-height: 1;
+  margin-bottom: 25px;
 }
 
 .reviews h3 {
@@ -363,14 +359,6 @@ input[type=submit] {
   justify-content: center;
 }
 
-.mission h2 {
-  margin: 0;
-}
-
-.mission-content p {
-  margin: 10px 0;
-}
-
 .contact-section {
   align-items: center;
   background-color: rgb(42, 66, 58);
@@ -379,16 +367,8 @@ input[type=submit] {
   justify-content: center;
 }
 
-.contact-section h2 {
-  margin: 0;
-}
-
 .contact-content p {
   margin: 0;
-}
-
-.map {
-  color: black;
 }
 
 /* ==========================================================================
@@ -411,23 +391,19 @@ input[type=submit] {
   margin: 50px 0 0 0;
 }
 
-.faq p {
-  line-height: 1.125em;
-  margin: 0 auto;
-}
-
 .faq h2 {
-  margin: 0 0 25px 0;
-}
-
-.faq h3 {
-  line-height: 1.5em;
-  margin: 0 0 10px 0;
+  line-height: 1;
+  margin-bottom: 40px;
 }
 
 .faq-content {
   margin-bottom: 50px;
 }
+
+.faq-content h3 {
+  line-height: 1.333;
+}
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -525,6 +501,16 @@ input[type=submit] {
     max-width: 640px;
   }
 
+  h2 {
+    font-size: 2.25em;
+    line-height: 1.333;
+  }
+
+  h3 {
+      font-size: 1.5em;
+      line-height: 1.25;
+  }
+
 /*-------------------------HOME PAGE------------------------*/
 
 /*Header styles*/
@@ -537,6 +523,10 @@ header {
 header .content-wrapper {
   justify-content: space-between;
   width: 100%;
+}
+
+header figure {
+  width: 30%;
 }
 
 header nav {
@@ -552,7 +542,15 @@ header nav ul {
 }
 
 /*Hero styles*/
+.hero-area {
+  min-height: 600px;
+}
 
+.hero-area h1 {
+  font-size: 3em;
+  line-height: 1;
+  margin: 0;
+}
 
 /*Aside styles*/
 
@@ -571,6 +569,10 @@ aside .content-wrapper .form {
 
 /*Features styles*/
 
+.features h2 {
+  margin-bottom: 20px;
+}
+
 .features article {
   align-items: center;
   display: flex;
@@ -580,7 +582,7 @@ aside .content-wrapper .form {
 }
 
 .features .features-item-description {
-  width: 50%;
+  width: 62%;
 }
 
 /*Reviews styles*/
@@ -589,9 +591,20 @@ aside .content-wrapper .form {
   justify-content: space-between;
 }
 
+.reviews h2 {
+  width: 85%;
+}
+
+.reviews article figure,
 .reviews article div {
   width: 49%;
 }
+
+.reviews h3 {
+  margin: 0;
+  width: 75%;
+}
+
 
 /*Footer styles*/
 
@@ -600,9 +613,10 @@ aside .content-wrapper .form {
    width: 65%;
  }
 
- .footer-content {
+ footer .footer-content {
    align-items: center;
    display: flex;
+   flex-direction: row;
    justify-content: space-between;
  }
 
@@ -610,8 +624,17 @@ aside .content-wrapper .form {
    margin-bottom: 0;
  }
 
+ footer h3 {
+   font-size: 1.5em;
+   margin-bottom: 40px;
+ }
+
+ footer p {
+   line-height: 1.285;
+ }
+
  footer .copyright {
-   width: 100%;
+    width: 100%;
  }
 
 /*-------------------------ABOUT PAGE------------------------*/
@@ -651,6 +674,12 @@ aside .content-wrapper .form {
      width: 100%;
  }
 
+ .faq h3,
+ .faq p {
+     font-size: .875em;
+     line-height: 1.125;
+ }
+
 }
 
 @media only screen and (min-width: 1200px) {
@@ -663,9 +692,29 @@ aside .content-wrapper .form {
 
   /*-------------------------HOME PAGE------------------------*/
 
+/*Header styles*/
+  header {
+    padding: 15px 0;
+  }
+
+  h2 {
+    font-size: 2.25em;
+  }
+
+  h3 {
+    font-size: 1.875em;
+  }
+
+  p {
+    font-size: 1.125em;
+    line-height: 1.333;
+  }
+
   /*Hero styles*/
+
   .hero-area h1 {
-    width: 60%;
+    font-size: 3.75em;
+    width: 80%;
   }
 
   /*Aside styles*/
@@ -678,6 +727,10 @@ aside .content-wrapper .form {
   aside .content-wrapper .form {
       width: 30%;
     }
+
+  .form-description p {
+    font-size: 1.125em;
+  }
 
   /*Features styles*/
 
@@ -695,19 +748,40 @@ aside .content-wrapper .form {
     width: 42%;
   }
 
+  .reviews h2 {
+    padding-bottom: 50px;
+  }
+
+  footer h3 {
+    font-size: 1.875em;
+  }
+
   /*-------------------------ABOUT PAGE------------------------*/
 
-  .mission h2, .contact-section .content-wrapper h2 {
+  .mission h2,
+  .contact-section .content-wrapper h2 {
+    font-size: 3em;
     width: 95%;
+  }
+
+  .contact-content h3 {
+    font-size: 1.875em;
   }
 
   /*-------------------------FAQ PAGE------------------------*/
 
   .faq h2 {
+    font-size: 3em;
     width: 100%;
    }
 
+  .faq h3,
+  .faq p {
+    font-size: 1.125em;
+    line-height: 1;
   }
+
+}
 
 @media print,
   (-webkit-min-device-pixel-ratio: 1.25),
