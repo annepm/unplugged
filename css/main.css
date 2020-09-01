@@ -234,8 +234,16 @@ footer .social-icons{
 
 footer .social-icons p {
   align-items: center;
+  background-color: rgb(82, 113, 88);
+  border-radius: 50%;
   display: flex;
+  height: 40px;
   justify-content: center;
+  width: 40px;
+}
+
+.fab-fa-instagram {
+ height: 15px;
 }
 
 footer .copyright {
@@ -655,6 +663,10 @@ aside .content-wrapper .form {
    line-height: 1.285;
  }
 
+ footer .social-icons p {
+    margin:0 15px;
+ }
+
  footer .copyright {
     width: 100%;
  }
@@ -782,8 +794,14 @@ aside .content-wrapper .form {
     padding-bottom: 50px;
   }
 
+  /*Footer Styles*/
+
   footer h3 {
     font-size: 1.875em;
+  }
+
+  footer .social-icons p {
+     margin:0 25px;
   }
 
   /*-------------------------ABOUT PAGE------------------------*/
