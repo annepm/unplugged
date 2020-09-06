@@ -318,7 +318,7 @@ input[type=submit] {
 
 .features h2 {
   font-size: 2em;
-  margin: 0 0 60px 0;
+  margin: 0;
 }
 
 .features article {
@@ -606,7 +606,7 @@ aside .content-wrapper .form {
 /*Features styles*/
 
 .features h2 {
-  margin-bottom: 20px;
+  margin: 0;
 }
 
 .features article {
@@ -815,7 +815,8 @@ aside .content-wrapper .form {
   .mission h2,
   .contact-section .content-wrapper h2 {
     font-size: 3em;
-    width: 95%;
+    margin: 0;
+    width: 96%;
   }
 
   .map figure {
@@ -826,6 +827,9 @@ aside .content-wrapper .form {
     width: 100%;
   }
 
+  .contact-content {
+    max-width: 87%;
+  }
   .contact-content h3 {
     font-size: 1.875em;
   }
